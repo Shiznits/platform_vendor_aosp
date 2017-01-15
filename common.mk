@@ -57,7 +57,8 @@ PRODUCT_COPY_FILES += \
 # App packages
 PRODUCT_PACKAGES += \
     Email \
-    Exchange2
+    Exchange2 \
+    OmniStyle
 
 # Misc packages
 PRODUCT_PACKAGES += \
