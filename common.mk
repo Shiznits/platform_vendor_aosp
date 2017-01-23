@@ -176,10 +176,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 # Shiznits Version
 PRODUCT_PROPERTY_OVERRIDES += ro.shiznits.version=1.0
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
+#ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+#ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+#endif
 
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += \
