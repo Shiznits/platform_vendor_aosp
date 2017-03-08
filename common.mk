@@ -169,4 +169,9 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
 
+# Enable color metadata for 8xx UM targets
+    ifneq ($(filter msm8996 msm8998,$(TARGET_BOARD_PLATFORM)),)
+        TARGET_USES_COLOR_METADATA := true
+    endif
+
 $(call inherit-product-if-exists, vendor/extra/product.mk)
